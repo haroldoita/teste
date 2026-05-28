@@ -1,0 +1,65 @@
+
+<!DOCTYPE html> <!-- Documento HTML -->
+
+<html lang="pt-br"> <!-- Idioma -->
+
+<head> <!-- Cabeçalho -->
+
+    <meta charset="UTF-8"> <!-- UTF-8 -->
+
+    <title>Cadastro</title> <!-- Título -->
+
+    <link rel="stylesheet" href="style.css"> <!-- CSS -->
+
+</head> <!-- Fim head -->
+
+<body> <!-- Corpo -->
+
+<header> <!-- Cabeçalho -->
+
+    <h1>📋 Cadastro Financeiro</h1> <!-- Título -->
+
+</header> <!-- Fim header -->
+
+<div class="form-container"> <!-- Container formulário -->
+
+    <select id="tipo"> <!-- Campo tipo -->
+
+        <option value="">Selecione</option> <!-- Opção vazia -->
+
+        <option value="receita">Receita</option> <!-- Receita -->
+
+        <option value="despesa">Despesa</option> <!-- Despesa -->
+
+    </select> <!-- Fim select -->
+
+    <input type="text"
+           id="descricao"
+           placeholder="Descrição"> <!-- Campo descrição -->
+
+    <input type="number"
+           id="valor"
+           placeholder="Valor"> <!-- Campo valor -->
+
+    <input type="date"
+           id="data"> <!-- Campo data -->
+
+    <button onclick="salvarMovimentacao()"> <!-- Botão -->
+
+        Salvar <!-- Texto -->
+
+    </button> <!-- Fim botão -->
+
+    <a href="index.html" class="btn-voltar"> <!-- Link -->
+
+        Voltar <!-- Texto -->
+
+    </a> <!-- Fim link -->
+
+</div> <!-- Fim container -->
+
+<script src="script.js"></script> <!-- Importa JS -->
+
+</body> <!-- Fim body -->
+
+</html> <!-- Fim html -->
