@@ -1,82 +1,377 @@
+/* Corpo da página */
 body {
-    margin: 0;
+
+    /* Fonte do sistema */
     font-family: Arial;
-    background: linear-gradient(120deg, #4facfe, #00f2fe);
-}
 
-header {
+    /* Cor de fundo padrão */
+    background-color: #f2f2f2;
+
+    /* Centraliza textos */
     text-align: center;
-    color: white;
+
+    /* Fundo degradê */
+    background: linear-gradient(120deg, #4facfe, #00f2fe);
+
+    /* Remove margens padrão */
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+
+    /* Centraliza texto */
+    text-align: center;
+
+    /* Espaçamento interno */
     padding: 30px;
+
+    /* Fundo transparente */
+    background-color: rgba(0,0,0,0.2);
+
+    /* Cor branca */
+    color: white;
 }
 
+/* Texto do cabeçalho */
+header p {
+
+    /* Espaço acima */
+    margin-top: 10px;
+
+    /* Tamanho da fonte */
+    font-size: 16px;
+}
+
+/* Container principal */
 .container {
+
+    /* Flexbox */
     display: flex;
+
+    /* Centraliza horizontalmente */
     justify-content: center;
+
+    /* Espaço entre elementos */
     gap: 30px;
+
+    /* Espaçamento interno */
+    padding: 40px;
+
+    /* Quebra linha */
     flex-wrap: wrap;
-    padding: 20px;
 }
 
+/* Cards */
 .card {
+
+    /* Fundo branco */
     background: white;
-    padding: 20px;
-    width: 300px;
+
+    /* Espaçamento interno */
+    padding: 25px;
+
+    /* Bordas arredondadas */
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    /* Largura */
+    width: 280px;
+
+    /* Centraliza texto */
+    text-align: center;
+
+    /* Sombra */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+    /* Animação */
+    transition: 0.3s;
 }
 
+/* Hover do card */
+.card:hover {
+
+    /* Sobe o card */
+    transform: translateY(-5px);
+}
+
+/* Título do card */
+.card h2 {
+
+    /* Espaço inferior */
+    margin-bottom: 10px;
+}
+
+/* Texto do card */
+.card p {
+
+    /* Tamanho fonte */
+    font-size: 14px;
+
+    /* Espaço inferior */
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.btn {
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Cor botão */
+    background: #4facfe;
+
+    /* Texto branco */
+    color: white;
+
+    /* Espaçamento */
+    padding: 10px 20px;
+
+    /* Bordas arredondadas */
+    border-radius: 8px;
+
+    /* Animação */
+    transition: 0.3s;
+
+    /* Exibe em bloco */
+    display: inline-block;
+}
+
+/* Hover botão */
+.btn:hover {
+
+    /* Cor mais escura */
+    background: #007bff;
+}
+
+/* Rodapé */
+footer {
+
+    /* Centraliza */
+    text-align: center;
+
+    /* Espaçamento */
+    padding: 15px;
+
+    /* Fundo */
+    background: rgba(0,0,0,0.2);
+
+    /* Texto branco */
+    color: white;
+
+    /* Fixa no final */
+    position: fixed;
+
+    /* Largura total */
+    width: 100%;
+
+    /* Encosta embaixo */
+    bottom: 0;
+}
+
+/* Títulos */
+h1, h2 {
+
+    /* Cor */
+    color: #333;
+}
+
+/* Formulário */
+.form-container {
+
+    /* Fundo branco */
+    background: white;
+
+    /* Espaçamento */
+    padding: 20px;
+
+    /* Centraliza */
+    margin: auto;
+
+    /* Largura */
+    width: 300px;
+
+    /* Bordas arredondadas */
+    border-radius: 10px;
+
+    /* Sombra */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Campos */
 input,
 select,
 button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
+
+    /* Largura */
+    width: 90%;
+
+    /* Margem */
+    margin: 10px 0;
+
+    /* Espaçamento interno */
+    padding: 8px;
 }
 
+/* Botão */
 button {
-    background: #007bff;
+
+    /* Fundo verde */
+    background-color: green;
+
+    /* Texto branco */
     color: white;
+
+    /* Remove borda */
     border: none;
+
+    /* Cursor mão */
     cursor: pointer;
 }
 
+/* Hover botão */
 button:hover {
-    background: #0056b3;
+
+    /* Transparência */
+    opacity: 0.9;
 }
 
+/* Container tabela */
 .tabela-container {
-    width: 90%;
-    margin: auto;
+
+    /* Fundo */
     background: white;
+
+    /* Largura */
+    width: 90%;
+
+    /* Centraliza */
+    margin: auto;
+
+    /* Espaçamento */
     padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 30px;
+
+    /* Bordas arredondadas */
+    border-radius: 10px;
+
+    /* Sombra */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* Tabela */
 table {
+
+    /* Centraliza */
+    margin: auto;
+
+    /* Fundo branco */
+    background: white;
+
+    /* Largura total */
     width: 100%;
+
+    /* Remove espaços */
     border-collapse: collapse;
 }
 
+/* Colunas */
 th,
 td {
-    border: 1px solid #ddd;
+
+    /* Borda */
+    border: 1px solid #ccc;
+
+    /* Espaçamento */
     padding: 10px;
-    text-align: center;
 }
 
+/* Cabeçalho tabela */
 th {
+
+    /* Fundo azul */
     background: #007bff;
+
+    /* Texto branco */
     color: white;
 }
 
+/* Receita */
 .receita {
+
+    /* Verde */
     color: green;
+
+    /* Negrito */
     font-weight: bold;
 }
 
+/* Despesa */
 .despesa {
+
+    /* Vermelho */
     color: red;
+
+    /* Negrito */
     font-weight: bold;
+}
+
+/* Navegação */
+nav {
+
+    /* Espaço superior */
+    margin-top: 200px;
+}
+
+/* Links navegação */
+nav a {
+
+    /* Margem */
+    margin: 10px;
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Negrito */
+    font-weight: bold;
+}
+
+/* Resumo financeiro */
+.resumo {
+
+    /* Texto branco */
+    color: white;
+
+    /* Espaço */
+    margin: 20px;
+}
+
+/* Botão voltar */
+.btn-voltar {
+
+    /* Fundo escuro */
+    background: #333;
+
+    /* Texto branco */
+    color: white;
+
+    /* Espaçamento */
+    padding: 10px 20px;
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Bordas arredondadas */
+    border-radius: 8px;
+
+    /* Exibe inline */
+    display: inline-block;
+
+    /* Espaço superior */
+    margin-top: 20px;
+}
+
+/* Hover botão voltar */
+.btn-voltar:hover {
+
+    /* Fundo mais claro */
+    background: #555;
 }
