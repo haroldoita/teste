@@ -1,12 +1,17 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "controle_financeiro";
 
-$conn = new mysqli($host, $user, $pass, $db);
+// Cria conexão com banco SQLite
+$conn = new SQLite3('controle_financeiro.db');
 
-if ($conn->connect_error) {
-    die("Erro de conexão: " . $conn->connect_error);
-}
+// Cria tabela caso não exista
+$conn->exec("
+CREATE TABLE IF NOT EXISTS movimentacoes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tipo TEXT,
+    descricao TEXT,
+    valor REAL,
+    data TEXT
+)
+");
+
 ?>
