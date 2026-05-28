@@ -1,0 +1,129 @@
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    text-align: center;
+     background: linear-gradient(120deg, #4facfe, #00f2fe);
+}
+/* Cabeçalho */
+header {
+    text-align: center; /* Centraliza o texto */
+    padding: 30px; /* Espaçamento interno */
+    
+    /* Fundo escuro transparente */
+    background-color: rgba(0,0,0,0.2);
+    
+    color: white; /* Texto branco */
+}
+
+/* Subtítulo */
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Container dos cards */
+.container {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza os cards */
+    gap: 30px; /* Espaço entre os cards */
+    padding: 40px;
+    
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+}
+
+/* Estilo dos cards */
+.card {
+    background: white; /* Fundo branco */
+    padding: 25px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 280px; /* Largura fixa */
+    text-align: center; /* Centraliza conteúdo */
+    
+    /* Sombra para dar efeito de elevação */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    
+    transition: 0.3s; /* Suaviza animações */
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+    transform: translateY(-5px); /* Sobe levemente */
+}
+
+/* Título dos cards */
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Texto dos cards */
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+.btn {
+    text-decoration: none; /* Remove sublinhado */
+    background: #4facfe; /* Cor de fundo */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    
+    transition: 0.3s;
+}
+
+/* Efeito hover no botão */
+.btn:hover {
+    background: #007bff; /* Cor mais escura ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    
+    background: rgba(0,0,0,0.2);
+    color: white;
+    
+    position: fixed; /* Fixa no rodapé da tela */
+    width: 100%;
+    bottom: 0; /* Sempre na parte inferior */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+input, select, button {
+    width: 90%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+table {
+    margin: auto;
+    background: white;
+}
+
+nav{
+    margin-top: 200px;
+}
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
